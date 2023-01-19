@@ -10,9 +10,7 @@ function App() {
   const input1 = document.getElementById("w");
   const input2 = document.getElementById("h");
 
-  function unit() {
-    let x = document.getElementById("opt");
-  }
+  
 
   function click(event) {
     event.preventDefault();
@@ -73,7 +71,7 @@ function App() {
           id="h"
         />
 
-        <select name="unit" id="opt" onChange={unit}>
+        <select name="unit" id="opt" onChange={(e)=>e.target.value}>
           <option value="">Select</option>
           <option value="cm">cm</option>
           <option value="feet">Feet</option>
